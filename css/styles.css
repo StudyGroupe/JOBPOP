@@ -48,7 +48,7 @@ header .header-right a:nth-of-type(1) {
 .title {
   width: 1000px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .title img {
   height: 70px;
@@ -171,6 +171,8 @@ footer {
 footer a {
   float: right;
   color: #090809;
+  font-size: 13px;
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
