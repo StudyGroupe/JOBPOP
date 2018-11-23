@@ -7,19 +7,7 @@
         <link rel="stylesheet" href="css/base.css">
     </head>
     <body>
-        <header>
-            <img src="img/logo.png">
-            <div class="header-right">
-                <a href="index.html">Home</a>
-                <a href="what's.html">What's</a>
-                <a href="company.html">Company</a>
-                <a href="#">Recruit</a>
-                <a href="Q&A.html">Q&A</a>
-                <a href="#">Access</a>
-                <a href="#">Blog</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </header>
+        <?php require_once "tpl/header.html"; ?>
         <div class="contact">
             <h1>contact</h1>
             <div class="contact-form">
@@ -29,35 +17,35 @@
                     <p>なお、ご連絡までに、お時間を頂く場合もございますので予めご了承ください。</p>
                     <p><span>*</span>は必須項目となります。</p>
                 </div>
-                <form action="index.html" method="post">
+                <form action="#" method="post">
                     <div class="text-form">
                         <div>
                             <p>氏名<span>*</span></p>
-                            <input type="text">
+                            <input class="text-form1" type="text">
                         </div>
-                        <div class="">
+                        <div>
                             <p>フリガナ<span>*</span></p>
-                            <input type="text">
+                            <input class="text-form2" type="text">
                         </div>
-                        <div class="">
+                        <div>
                             <p>電話番号</p>
-                            <input type="text">
+                            <input class="text-form3" type="text">
                         </div>
-                        <div class="">
+                        <div>
                             <p>メールアドレス<span>*</span></p>
-                            <input type="text">
+                            <input class="text-form4" type="text">
                         </div>
                     </div>
                     <h2>1.お問い合わせ内容をご記入ください<span>*</span></h2>
                     <div class="textarea-form">
-                        <textarea name="name" rows="8" cols="80"></textarea>
+                        <textarea class="text-form5" name="name" rows="8" cols="80"></textarea>
                         <input class="send" type="submit" value="送信">
                     </div>
                 </form>
             </div>
         </div>
-        <footer>
-            <a href="#">powered by SIGNAL Co.Ltd</a>
-        </footer>
+        <?php require_once "tpl/footer.html"; ?>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

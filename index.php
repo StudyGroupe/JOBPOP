@@ -7,56 +7,46 @@
         <link rel="stylesheet" href="css/base.css">
     </head>
     <body>
-        <header>
-            <img src="img/logo.png">
-            <div class="header-right">
-                <a href="index.html">Home</a>
-                <a href="what's.html">What's</a>
-                <a href="company.html">Company</a>
-                <a href="#">Recruit</a>
-                <a href="Q&A.html">Q&A</a>
-                <a href="#">Access</a>
-                <a href="#">Blog</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </header>
+        <?php require_once "tpl/header.html"; ?>
         <div class="main-wrapper">
             <img src="img/main_img.jpg">
-            <img src="img/catchcopy.png">
-            <img src="img/catchcopy2.png">
+            <img class="catchcopy" src="img/catchcopy.png">
+            <img class="catchcopy2" src="img/catchcopy2.png">
         </div>
         <div class="title">
-            <img src="img/title.png">
+            <img class="title1" src="img/title.png">
         </div>
         <div class="contents">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="img/btn01.png">
                 <p>ジョブポップとはこういう会社です。</p>
                 <p>more</p>
             </a>
-            <a href="company.html">
+            <a href="company.php">
                 <img src="img/btn02.png">
                 <p>会社概要</p>
                 <p>more</p>
             </a>
-            <a href="recruit.html">
+            <a href="recruit.php">
                 <img src="img/btn03.png">
                 <p>随時スタッフ募集しています。</p>
                 <p>more</p>
             </a>
-            <a href="Q&A.html">
+            <a href="Q&A.php">
                 <img src="img/btn04.png">
                 <p>よくある質問Q&A</p>
                 <p>more</p>
             </a>
-            <a href="contact.html">
+            <a href="contact.php">
                 <img src="img/btn05.png">
                 <p>ジョブポップへのお問い合せ</p>
                 <p>more</p>
             </a>
         </div>
-        <footer>
-            <a href="#">powered by SIGNAL Co.Ltd</a>
-        </footer>
+        <?php require_once "tpl/footer.html"; ?>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
