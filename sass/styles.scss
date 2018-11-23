@@ -19,6 +19,7 @@ header{
 }
 .main-wrapper{
     width: 1000px;
+    height: 450px;
     margin: 0 auto;
     img:nth-of-type(1){
         margin: 0 auto;
@@ -28,7 +29,7 @@ header{
         border-bottom: 20px solid #1d3a93;
     }
     img:nth-of-type(2){
-        // display: none;
+        display: none;
         width: 1000px;
         margin:  0 auto;
         position: relative;
@@ -42,18 +43,20 @@ header{
         width: 1000px;
         margin:  0 auto;
         position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 }
 
 .title{
     width: 1000px;
     margin: 0 auto;
-    padding-top: 50px;
     img{
         height: 70px;
         width: 300px;
     }
-
 }
 
 .contents{
